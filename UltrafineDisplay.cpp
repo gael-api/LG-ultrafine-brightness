@@ -92,12 +92,12 @@ void UltrafineDisplay::interactive() {
   printw("press 'i' to set brightness from 0 to 100.\n");
   printw("press 'm' to set max brightness.\n");
   printw("press 'u' to choose another display.\n");
-  printw("Current brghitness volume : %d\r", get_brightness_level());
+  printw("Current brightness : %d\r", get_brightness_level());
   int stop = false;
   while(!stop){
 	clrtoeol();
 	usleep(400 * 1000);
-	printw("Current brghitness volume : %d\r", get_brightness_level());
+	printw("Current brightness : %d\r", get_brightness_level());
 	int c = getch();
 	char buffer[128];
 	int input_volume;
